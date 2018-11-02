@@ -1,0 +1,51 @@
+{
+  "name": "SiemensPOC",
+  "version": "0.0.1",
+  "private": true,
+  "scripts": {
+    "start": "node node_modules/react-native/local-cli/cli.js start",
+    "test": "jest",
+    "run-android-release": "react-native run-android --variant=release",
+    "bundle-clean": "rm -rf ./bundle/*",
+    "bundle-clean-android": "rm -rf ./bundle/android && rm -rf ./bundle/android.zip",
+    "bundle-clean-ios": "rm -rf ./bundle/ios && rm -rf ./bundle/ios.zip",
+    "create-bundle-android": "react-native bundle --platform android --dev false --entry-file index.js  --bundle-output ./bundle/android/index.android.bundle  --assets-dest ./bundle/android",
+    "create-bundle-ios": "react-native bundle --platform ios --dev false --entry-file index.js  --bundle-output ./bundle/ios/index.ios.bundle  --assets-dest ./bundle/ios",
+    "zip-bundle-android": "cd bundle && zip android.zip ./android -r",
+    "zip-bundle-ios": "cd bundle && zip ios.zip ./ios -r",
+    "bundle-android": "npm run bundle-clean-android && mkdir ./bundle/android && npm run create-bundle-android && npm run zip-bundle-android && rm -rf ./bundle/android",
+    "bundle-ios": "npm run bundle-clean-ios && mkdir ./bundle/ios && npm run create-bundle-ios && npm run zip-bundle-ios && rm -rf ./bundle/ios",
+    "bundle": "npm run bundle-android & npm run bundle-ios",
+
+    "build-clean-android": "rm -rf ./output/android.apk",
+    "create-build-android": "cd android && ./gradlew assembleRelease",
+    "mv-android-apk": "mv -f android/app/build/outputs/apk/app-release.apk ./output/android.apk",
+    "build-android": "npm run build-clean-android && npm run create-build-android && npm run mv-android-apk",
+
+    "build-clean-ios": "rm -rf ./output/ios.ipa",
+    "xcodebuild-clean": "cd ios && xcodebuild clean -workspace SiemensPOC.xcodeproj -scheme SiemensPOC -configuration Realse",
+    "xcodebuild-archive": "cd ios && xcodebuild archive -workspace SiemensPOC.xcodeproj -scheme SiemensPOC  -configuration Realse  -archivePath ../output/SiemensPOC.xcarchive",
+    "xcodebuild-export": "cd ios && xcodebuild -exportArchive -archivePath ../output/SiemensPOC.xcarchive -exportOptionsPlist ../AdHocOptions.plist -exportPath ../output/ios.ipa"
+  },
+  "dependencies": {
+    "react": "16.3.1",
+    "react-native": "0.55.4",
+    "react-native-datepicker": "^1.7.2",
+    "react-native-image-picker": "^0.27.1",
+    "react-native-picker": "^4.3.7",
+    "react-native-progress": "^3.5.0",
+    "react-native-refresh-list-view": "^1.0.10",
+    "react-native-root-toast": "^3.0.1",
+    "react-navigation": "^2.17.0",
+    "redux": "^4.0.1"
+  },
+  "devDependencies": {
+    "babel-jest": "23.6.0",
+    "babel-preset-react-native": "4.0.1",
+    "jest": "23.6.0",
+    "react-test-renderer": "16.3.1"
+  },
+  "jest": {
+    "preset": "react-native"
+  }
+}

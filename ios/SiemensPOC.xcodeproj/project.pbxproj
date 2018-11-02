@@ -1,0 +1,1639 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+/* Begin PBXBuildFile section */
+		00C302E51ABCBA2D00DB3ED1 /* libRCTActionSheet.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 00C302AC1ABCB8CE00DB3ED1 /* libRCTActionSheet.a */; };
+		00C302E71ABCBA2D00DB3ED1 /* libRCTGeolocation.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 00C302BA1ABCB90400DB3ED1 /* libRCTGeolocation.a */; };
+		00C302E81ABCBA2D00DB3ED1 /* libRCTImage.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 00C302C01ABCB91800DB3ED1 /* libRCTImage.a */; };
+		00C302E91ABCBA2D00DB3ED1 /* libRCTNetwork.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 00C302DC1ABCB9D200DB3ED1 /* libRCTNetwork.a */; };
+		00C302EA1ABCBA2D00DB3ED1 /* libRCTVibration.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 00C302E41ABCB9EE00DB3ED1 /* libRCTVibration.a */; };
+		0208F533A82F4237A79AB991 /* libRNImagePicker.a in Frameworks */ = {isa = PBXBuildFile; fileRef = FBDB204D1F8F49A7B51DEB5A /* libRNImagePicker.a */; };
+		133E29F31AD74F7200F7D852 /* libRCTLinking.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 78C398B91ACF4ADC00677621 /* libRCTLinking.a */; };
+		139105C61AF99C1200B5F7CC /* libRCTSettings.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 139105C11AF99BAD00B5F7CC /* libRCTSettings.a */; };
+		139FDEF61B0652A700C62182 /* libRCTWebSocket.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 139FDEF41B06529B00C62182 /* libRCTWebSocket.a */; };
+		13B07FBC1A68108700A75B9A /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 13B07FB01A68108700A75B9A /* AppDelegate.m */; };
+		13B07FBD1A68108700A75B9A /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 13B07FB11A68108700A75B9A /* LaunchScreen.xib */; };
+		13B07FBF1A68108700A75B9A /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 13B07FB51A68108700A75B9A /* Images.xcassets */; };
+		13B07FC11A68108700A75B9A /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 13B07FB71A68108700A75B9A /* main.m */; };
+		146834051AC3E58100842450 /* libReact.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 146834041AC3E56700842450 /* libReact.a */; };
+		5E9157361DD0AC6A00FF2AA8 /* libRCTAnimation.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 5E9157331DD0AC6500FF2AA8 /* libRCTAnimation.a */; };
+		832341BD1AAA6AB300B99B32 /* libRCTText.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 832341B51AAA6A8300B99B32 /* libRCTText.a */; };
+		ADBDB9381DFEBF1600ED6528 /* libRCTBlob.a in Frameworks */ = {isa = PBXBuildFile; fileRef = ADBDB9271DFEBF0700ED6528 /* libRCTBlob.a */; };
+		C5C55D0593CE450FB4C35F6C /* libRCTBEEPickerManager.a in Frameworks */ = {isa = PBXBuildFile; fileRef = A000E520360143E29178289D /* libRCTBEEPickerManager.a */; };
+		F847443C217F13D10005278B /* UMCommonLog.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F847442F217F13D10005278B /* UMCommonLog.framework */; };
+		F847443D217F13D10005278B /* UMCommonLog.bundle in Resources */ = {isa = PBXBuildFile; fileRef = F8474430217F13D10005278B /* UMCommonLog.bundle */; };
+		F847443E217F13D10005278B /* UTDID.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F8474433217F13D10005278B /* UTDID.framework */; };
+		F847443F217F13D10005278B /* SecurityEnvSDK.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F8474434217F13D10005278B /* SecurityEnvSDK.framework */; };
+		F8474440217F13D10005278B /* UMPush.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F8474437217F13D10005278B /* UMPush.framework */; };
+		F8474441217F13D10005278B /* UMCommon.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F847443B217F13D10005278B /* UMCommon.framework */; };
+		F8474443217F14E20005278B /* libsqlite3.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = F8474442217F14E20005278B /* libsqlite3.tbd */; };
+		F8474445217F14F40005278B /* CoreTelephony.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F8474444217F14F40005278B /* CoreTelephony.framework */; };
+		F8474447217F15040005278B /* SystemConfiguration.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F8474446217F15040005278B /* SystemConfiguration.framework */; };
+		F8474449217F16C70005278B /* UserNotifications.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F8474448217F16C70005278B /* UserNotifications.framework */; };
+		F849D6522181D85C0008FF20 /* UMPushModule.m in Sources */ = {isa = PBXBuildFile; fileRef = F849D6262181D85C0008FF20 /* UMPushModule.m */; };
+		F849D6552181DAD20008FF20 /* RNUMConfigure.m in Sources */ = {isa = PBXBuildFile; fileRef = F849D6532181DAD20008FF20 /* RNUMConfigure.m */; };
+		F86226BA218AAEF8003464DE /* crypt.c in Sources */ = {isa = PBXBuildFile; fileRef = F8622693218AAEF8003464DE /* crypt.c */; };
+		F86226BB218AAEF8003464DE /* unzip.c in Sources */ = {isa = PBXBuildFile; fileRef = F8622694218AAEF8003464DE /* unzip.c */; };
+		F86226BC218AAEF8003464DE /* zip.c in Sources */ = {isa = PBXBuildFile; fileRef = F8622695218AAEF8003464DE /* zip.c */; };
+		F86226BD218AAEF8003464DE /* ioapi.c in Sources */ = {isa = PBXBuildFile; fileRef = F8622697218AAEF8003464DE /* ioapi.c */; };
+		F86226BE218AAEF8003464DE /* ioapi_buf.c in Sources */ = {isa = PBXBuildFile; fileRef = F8622699218AAEF8003464DE /* ioapi_buf.c */; };
+		F86226BF218AAEF8003464DE /* ioapi_mem.c in Sources */ = {isa = PBXBuildFile; fileRef = F862269D218AAEF8003464DE /* ioapi_mem.c */; };
+		F86226C0218AAEF8003464DE /* minishared.c in Sources */ = {isa = PBXBuildFile; fileRef = F862269E218AAEF8003464DE /* minishared.c */; };
+		F86226C1218AAEF8003464DE /* aeskey.c in Sources */ = {isa = PBXBuildFile; fileRef = F86226A4218AAEF8003464DE /* aeskey.c */; };
+		F86226C2218AAEF8003464DE /* hmac.c in Sources */ = {isa = PBXBuildFile; fileRef = F86226A5218AAEF8003464DE /* hmac.c */; };
+		F86226C3218AAEF8003464DE /* aescrypt.c in Sources */ = {isa = PBXBuildFile; fileRef = F86226A8218AAEF8003464DE /* aescrypt.c */; };
+		F86226C4218AAEF8003464DE /* fileenc.c in Sources */ = {isa = PBXBuildFile; fileRef = F86226A9218AAEF8003464DE /* fileenc.c */; };
+		F86226C5218AAEF8003464DE /* sha1.c in Sources */ = {isa = PBXBuildFile; fileRef = F86226AB218AAEF8003464DE /* sha1.c */; };
+		F86226C6218AAEF8003464DE /* aes_ni.c in Sources */ = {isa = PBXBuildFile; fileRef = F86226AE218AAEF8003464DE /* aes_ni.c */; };
+		F86226C7218AAEF8003464DE /* prng.c in Sources */ = {isa = PBXBuildFile; fileRef = F86226B0218AAEF8003464DE /* prng.c */; };
+		F86226C8218AAEF8003464DE /* pwd2key.c in Sources */ = {isa = PBXBuildFile; fileRef = F86226B2218AAEF8003464DE /* pwd2key.c */; };
+		F86226C9218AAEF8003464DE /* aestab.c in Sources */ = {isa = PBXBuildFile; fileRef = F86226B3218AAEF8003464DE /* aestab.c */; };
+		F86226CA218AAEF8003464DE /* SSZipArchive.m in Sources */ = {isa = PBXBuildFile; fileRef = F86226B8218AAEF8003464DE /* SSZipArchive.m */; };
+		F86226CB218AAEF8003464DE /* Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = F86226B9218AAEF8003464DE /* Info.plist */; };
+		F89B9BF5217720F600C30579 /* UserDefaultsModule.m in Sources */ = {isa = PBXBuildFile; fileRef = F89B9BCD217720F600C30579 /* UserDefaultsModule.m */; };
+		F89B9C4C2177309B00C30579 /* libART.a in Frameworks */ = {isa = PBXBuildFile; fileRef = F89B9C232177309500C30579 /* libART.a */; };
+		F8C1A8E5216DD69700C9EA47 /* libz.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = F8C1A8E4216DD69700C9EA47 /* libz.tbd */; };
+		F8C1A8E7216DD69F00C9EA47 /* libbz2.1.0.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = F8C1A8E6216DD69E00C9EA47 /* libbz2.1.0.tbd */; };
+		F8CC11D72189C49200D62488 /* SRHotUpdate.m in Sources */ = {isa = PBXBuildFile; fileRef = F8CC11D62189C49200D62488 /* SRHotUpdate.m */; };
+		F8CC11DA2189C62D00D62488 /* SRHotUpdateTask.m in Sources */ = {isa = PBXBuildFile; fileRef = F8CC11D92189C62D00D62488 /* SRHotUpdateTask.m */; };
+		F8CC11DD2189C67000D62488 /* SRHotUpdateManager.m in Sources */ = {isa = PBXBuildFile; fileRef = F8CC11DC2189C67000D62488 /* SRHotUpdateManager.m */; };
+		F8CC11E02189CA4A00D62488 /* SRHotUpdateDownLoader.m in Sources */ = {isa = PBXBuildFile; fileRef = F8CC11DF2189CA4A00D62488 /* SRHotUpdateDownLoader.m */; };
+		F8CC11E62189DADA00D62488 /* SRHotUpdateTaskModel.m in Sources */ = {isa = PBXBuildFile; fileRef = F8CC11E52189DADA00D62488 /* SRHotUpdateTaskModel.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		00C302AB1ABCB8CE00DB3ED1 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 00C302A71ABCB8CE00DB3ED1 /* RCTActionSheet.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 134814201AA4EA6300B7C361;
+			remoteInfo = RCTActionSheet;
+		};
+		00C302B91ABCB90400DB3ED1 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 00C302B51ABCB90400DB3ED1 /* RCTGeolocation.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 134814201AA4EA6300B7C361;
+			remoteInfo = RCTGeolocation;
+		};
+		00C302BF1ABCB91800DB3ED1 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 00C302BB1ABCB91800DB3ED1 /* RCTImage.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 58B5115D1A9E6B3D00147676;
+			remoteInfo = RCTImage;
+		};
+		00C302DB1ABCB9D200DB3ED1 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 00C302D31ABCB9D200DB3ED1 /* RCTNetwork.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 58B511DB1A9E6C8500147676;
+			remoteInfo = RCTNetwork;
+		};
+		00C302E31ABCB9EE00DB3ED1 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 00C302DF1ABCB9EE00DB3ED1 /* RCTVibration.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 832C81801AAF6DEF007FA2F7;
+			remoteInfo = RCTVibration;
+		};
+		139105C01AF99BAD00B5F7CC /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 139105B61AF99BAD00B5F7CC /* RCTSettings.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 134814201AA4EA6300B7C361;
+			remoteInfo = RCTSettings;
+		};
+		139FDEF31B06529B00C62182 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 139FDEE61B06529A00C62182 /* RCTWebSocket.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 3C86DF461ADF2C930047B81A;
+			remoteInfo = RCTWebSocket;
+		};
+		146834031AC3E56700842450 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 146833FF1AC3E56700842450 /* React.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 83CBBA2E1A601D0E00E9B192;
+			remoteInfo = React;
+		};
+		2D16E6711FA4F8DC00B85C8A /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = ADBDB91F1DFEBF0600ED6528 /* RCTBlob.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = ADD01A681E09402E00F6D226;
+			remoteInfo = "RCTBlob-tvOS";
+		};
+		2D16E6831FA4F8DC00B85C8A /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 139FDEE61B06529A00C62182 /* RCTWebSocket.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 3DBE0D001F3B181A0099AA32;
+			remoteInfo = fishhook;
+		};
+		2D16E6851FA4F8DC00B85C8A /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 139FDEE61B06529A00C62182 /* RCTWebSocket.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 3DBE0D0D1F3B181C0099AA32;
+			remoteInfo = "fishhook-tvOS";
+		};
+		2DF0FFDE2056DD460020B375 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 146833FF1AC3E56700842450 /* React.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = EBF21BDC1FC498900052F4D5;
+			remoteInfo = jsinspector;
+		};
+		2DF0FFE02056DD460020B375 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 146833FF1AC3E56700842450 /* React.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = EBF21BFA1FC4989A0052F4D5;
+			remoteInfo = "jsinspector-tvOS";
+		};
+		2DF0FFE22056DD460020B375 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 146833FF1AC3E56700842450 /* React.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 139D7ECE1E25DB7D00323FB7;
+			remoteInfo = "third-party";
+		};
+		2DF0FFE42056DD460020B375 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 146833FF1AC3E56700842450 /* React.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 3D383D3C1EBD27B6005632C8;
+			remoteInfo = "third-party-tvOS";
+		};
+		2DF0FFE62056DD460020B375 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 146833FF1AC3E56700842450 /* React.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 139D7E881E25C6D100323FB7;
+			remoteInfo = "double-conversion";
+		};
+		2DF0FFE82056DD460020B375 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 146833FF1AC3E56700842450 /* React.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 3D383D621EBD27B9005632C8;
+			remoteInfo = "double-conversion-tvOS";
+		};
+		2DF0FFEA2056DD460020B375 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 146833FF1AC3E56700842450 /* React.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 9936F3131F5F2E4B0010BF04;
+			remoteInfo = privatedata;
+		};
+		2DF0FFEC2056DD460020B375 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 146833FF1AC3E56700842450 /* React.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 9936F32F1F5F2E5B0010BF04;
+			remoteInfo = "privatedata-tvOS";
+		};
+		3DAD3E831DF850E9000B6D8A /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 00C302BB1ABCB91800DB3ED1 /* RCTImage.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 2D2A283A1D9B042B00D4039D;
+			remoteInfo = "RCTImage-tvOS";
+		};
+		3DAD3E871DF850E9000B6D8A /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 78C398B01ACF4ADC00677621 /* RCTLinking.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 2D2A28471D9B043800D4039D;
+			remoteInfo = "RCTLinking-tvOS";
+		};
+		3DAD3E8B1DF850E9000B6D8A /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 00C302D31ABCB9D200DB3ED1 /* RCTNetwork.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 2D2A28541D9B044C00D4039D;
+			remoteInfo = "RCTNetwork-tvOS";
+		};
+		3DAD3E8F1DF850E9000B6D8A /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 139105B61AF99BAD00B5F7CC /* RCTSettings.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 2D2A28611D9B046600D4039D;
+			remoteInfo = "RCTSettings-tvOS";
+		};
+		3DAD3E931DF850E9000B6D8A /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 832341B01AAA6A8300B99B32 /* RCTText.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 2D2A287B1D9B048500D4039D;
+			remoteInfo = "RCTText-tvOS";
+		};
+		3DAD3E981DF850E9000B6D8A /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 139FDEE61B06529A00C62182 /* RCTWebSocket.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 2D2A28881D9B049200D4039D;
+			remoteInfo = "RCTWebSocket-tvOS";
+		};
+		3DAD3EA21DF850E9000B6D8A /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 146833FF1AC3E56700842450 /* React.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 2D2A28131D9B038B00D4039D;
+			remoteInfo = "React-tvOS";
+		};
+		3DAD3EA41DF850E9000B6D8A /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 146833FF1AC3E56700842450 /* React.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 3D3C059A1DE3340900C268FA;
+			remoteInfo = yoga;
+		};
+		3DAD3EA61DF850E9000B6D8A /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 146833FF1AC3E56700842450 /* React.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 3D3C06751DE3340C00C268FA;
+			remoteInfo = "yoga-tvOS";
+		};
+		3DAD3EA81DF850E9000B6D8A /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 146833FF1AC3E56700842450 /* React.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 3D3CD9251DE5FBEC00167DC4;
+			remoteInfo = cxxreact;
+		};
+		3DAD3EAA1DF850E9000B6D8A /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 146833FF1AC3E56700842450 /* React.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 3D3CD9321DE5FBEE00167DC4;
+			remoteInfo = "cxxreact-tvOS";
+		};
+		3DAD3EAC1DF850E9000B6D8A /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 146833FF1AC3E56700842450 /* React.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 3D3CD90B1DE5FBD600167DC4;
+			remoteInfo = jschelpers;
+		};
+		3DAD3EAE1DF850E9000B6D8A /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 146833FF1AC3E56700842450 /* React.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 3D3CD9181DE5FBD800167DC4;
+			remoteInfo = "jschelpers-tvOS";
+		};
+		5E9157321DD0AC6500FF2AA8 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 5E91572D1DD0AC6500FF2AA8 /* RCTAnimation.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 134814201AA4EA6300B7C361;
+			remoteInfo = RCTAnimation;
+		};
+		5E9157341DD0AC6500FF2AA8 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 5E91572D1DD0AC6500FF2AA8 /* RCTAnimation.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 2D2A28201D9B03D100D4039D;
+			remoteInfo = "RCTAnimation-tvOS";
+		};
+		78C398B81ACF4ADC00677621 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 78C398B01ACF4ADC00677621 /* RCTLinking.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 134814201AA4EA6300B7C361;
+			remoteInfo = RCTLinking;
+		};
+		832341B41AAA6A8300B99B32 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 832341B01AAA6A8300B99B32 /* RCTText.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 58B5119B1A9E6C1200147676;
+			remoteInfo = RCTText;
+		};
+		ADBDB9261DFEBF0700ED6528 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = ADBDB91F1DFEBF0600ED6528 /* RCTBlob.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 358F4ED71D1E81A9004DF814;
+			remoteInfo = RCTBlob;
+		};
+		F892BC2D21787EC4007D38DE /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 2642E7F4BFBA401DB102650A /* RNImagePicker.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 014A3B5C1C6CF33500B6D375;
+			remoteInfo = RNImagePicker;
+		};
+		F89456E12181930E0085C681 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 8CAD67BBABEF4CCABB44408E /* RCTBEEPickerManager.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 17D41E551D7EE0CA0031415E;
+			remoteInfo = RCTBEEPickerManager;
+		};
+		F89B9C222177309500C30579 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = F89B9C1D2177309500C30579 /* ART.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 0CF68AC11AF0540F00FF9E5C;
+			remoteInfo = ART;
+		};
+		F89B9C242177309500C30579 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = F89B9C1D2177309500C30579 /* ART.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 323A12871E5F266B004975B8;
+			remoteInfo = "ART-tvOS";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		008F07F21AC5B25A0029DE68 /* main.jsbundle */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = main.jsbundle; sourceTree = "<group>"; };
+		00C302A71ABCB8CE00DB3ED1 /* RCTActionSheet.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = RCTActionSheet.xcodeproj; path = "../node_modules/react-native/Libraries/ActionSheetIOS/RCTActionSheet.xcodeproj"; sourceTree = "<group>"; };
+		00C302B51ABCB90400DB3ED1 /* RCTGeolocation.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = RCTGeolocation.xcodeproj; path = "../node_modules/react-native/Libraries/Geolocation/RCTGeolocation.xcodeproj"; sourceTree = "<group>"; };
+		00C302BB1ABCB91800DB3ED1 /* RCTImage.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = RCTImage.xcodeproj; path = "../node_modules/react-native/Libraries/Image/RCTImage.xcodeproj"; sourceTree = "<group>"; };
+		00C302D31ABCB9D200DB3ED1 /* RCTNetwork.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = RCTNetwork.xcodeproj; path = "../node_modules/react-native/Libraries/Network/RCTNetwork.xcodeproj"; sourceTree = "<group>"; };
+		00C302DF1ABCB9EE00DB3ED1 /* RCTVibration.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = RCTVibration.xcodeproj; path = "../node_modules/react-native/Libraries/Vibration/RCTVibration.xcodeproj"; sourceTree = "<group>"; };
+		00E356F11AD99517003FC87E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		00E356F21AD99517003FC87E /* SiemensPOCTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SiemensPOCTests.m; sourceTree = "<group>"; };
+		139105B61AF99BAD00B5F7CC /* RCTSettings.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = RCTSettings.xcodeproj; path = "../node_modules/react-native/Libraries/Settings/RCTSettings.xcodeproj"; sourceTree = "<group>"; };
+		139FDEE61B06529A00C62182 /* RCTWebSocket.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = RCTWebSocket.xcodeproj; path = "../node_modules/react-native/Libraries/WebSocket/RCTWebSocket.xcodeproj"; sourceTree = "<group>"; };
+		13B07F961A680F5B00A75B9A /* SiemensPOC.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SiemensPOC.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		13B07FAF1A68108700A75B9A /* AppDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = AppDelegate.h; path = SiemensPOC/AppDelegate.h; sourceTree = "<group>"; };
+		13B07FB01A68108700A75B9A /* AppDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = AppDelegate.m; path = SiemensPOC/AppDelegate.m; sourceTree = "<group>"; };
+		13B07FB21A68108700A75B9A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/LaunchScreen.xib; sourceTree = "<group>"; };
+		13B07FB51A68108700A75B9A /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; name = Images.xcassets; path = SiemensPOC/Images.xcassets; sourceTree = "<group>"; };
+		13B07FB61A68108700A75B9A /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = Info.plist; path = SiemensPOC/Info.plist; sourceTree = "<group>"; };
+		13B07FB71A68108700A75B9A /* main.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = main.m; path = SiemensPOC/main.m; sourceTree = "<group>"; };
+		146833FF1AC3E56700842450 /* React.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = React.xcodeproj; path = "../node_modules/react-native/React/React.xcodeproj"; sourceTree = "<group>"; };
+		2642E7F4BFBA401DB102650A /* RNImagePicker.xcodeproj */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = "wrapper.pb-project"; name = RNImagePicker.xcodeproj; path = "../node_modules/react-native-image-picker/ios/RNImagePicker.xcodeproj"; sourceTree = "<group>"; };
+		2D16E6891FA4F8E400B85C8A /* libReact.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; path = libReact.a; sourceTree = BUILT_PRODUCTS_DIR; };
+		5E91572D1DD0AC6500FF2AA8 /* RCTAnimation.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = RCTAnimation.xcodeproj; path = "../node_modules/react-native/Libraries/NativeAnimation/RCTAnimation.xcodeproj"; sourceTree = "<group>"; };
+		78C398B01ACF4ADC00677621 /* RCTLinking.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = RCTLinking.xcodeproj; path = "../node_modules/react-native/Libraries/LinkingIOS/RCTLinking.xcodeproj"; sourceTree = "<group>"; };
+		832341B01AAA6A8300B99B32 /* RCTText.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = RCTText.xcodeproj; path = "../node_modules/react-native/Libraries/Text/RCTText.xcodeproj"; sourceTree = "<group>"; };
+		8CAD67BBABEF4CCABB44408E /* RCTBEEPickerManager.xcodeproj */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = "wrapper.pb-project"; name = RCTBEEPickerManager.xcodeproj; path = "../node_modules/react-native-picker/ios/RCTBEEPickerManager.xcodeproj"; sourceTree = "<group>"; };
+		A000E520360143E29178289D /* libRCTBEEPickerManager.a */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = archive.ar; path = libRCTBEEPickerManager.a; sourceTree = "<group>"; };
+		ADBDB91F1DFEBF0600ED6528 /* RCTBlob.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = RCTBlob.xcodeproj; path = "../node_modules/react-native/Libraries/Blob/RCTBlob.xcodeproj"; sourceTree = "<group>"; };
+		F847442F217F13D10005278B /* UMCommonLog.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = UMCommonLog.framework; sourceTree = "<group>"; };
+		F8474430217F13D10005278B /* UMCommonLog.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = UMCommonLog.bundle; sourceTree = "<group>"; };
+		F8474433217F13D10005278B /* UTDID.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = UTDID.framework; sourceTree = "<group>"; };
+		F8474434217F13D10005278B /* SecurityEnvSDK.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = SecurityEnvSDK.framework; sourceTree = "<group>"; };
+		F8474437217F13D10005278B /* UMPush.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = UMPush.framework; sourceTree = "<group>"; };
+		F847443B217F13D10005278B /* UMCommon.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = UMCommon.framework; sourceTree = "<group>"; };
+		F8474442217F14E20005278B /* libsqlite3.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libsqlite3.tbd; path = usr/lib/libsqlite3.tbd; sourceTree = SDKROOT; };
+		F8474444217F14F40005278B /* CoreTelephony.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreTelephony.framework; path = System/Library/Frameworks/CoreTelephony.framework; sourceTree = SDKROOT; };
+		F8474446217F15040005278B /* SystemConfiguration.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SystemConfiguration.framework; path = System/Library/Frameworks/SystemConfiguration.framework; sourceTree = SDKROOT; };
+		F8474448217F16C70005278B /* UserNotifications.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UserNotifications.framework; path = System/Library/Frameworks/UserNotifications.framework; sourceTree = SDKROOT; };
+		F847444A217F16E30005278B /* SiemensPOC.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; name = SiemensPOC.entitlements; path = SiemensPOC/SiemensPOC.entitlements; sourceTree = "<group>"; };
+		F849D6262181D85C0008FF20 /* UMPushModule.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = UMPushModule.m; sourceTree = "<group>"; };
+		F849D6272181D85C0008FF20 /* UMPushModule.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UMPushModule.h; sourceTree = "<group>"; };
+		F849D6532181DAD20008FF20 /* RNUMConfigure.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RNUMConfigure.m; sourceTree = "<group>"; };
+		F849D6542181DAD20008FF20 /* RNUMConfigure.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RNUMConfigure.h; sourceTree = "<group>"; };
+		F8622691218AAEF8003464DE /* ZipArchive.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZipArchive.h; sourceTree = "<group>"; };
+		F8622693218AAEF8003464DE /* crypt.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = crypt.c; sourceTree = "<group>"; };
+		F8622694218AAEF8003464DE /* unzip.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = unzip.c; sourceTree = "<group>"; };
+		F8622695218AAEF8003464DE /* zip.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = zip.c; sourceTree = "<group>"; };
+		F8622696218AAEF8003464DE /* minishared.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = minishared.h; sourceTree = "<group>"; };
+		F8622697218AAEF8003464DE /* ioapi.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = ioapi.c; sourceTree = "<group>"; };
+		F8622698218AAEF8003464DE /* ioapi_mem.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ioapi_mem.h; sourceTree = "<group>"; };
+		F8622699218AAEF8003464DE /* ioapi_buf.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = ioapi_buf.c; sourceTree = "<group>"; };
+		F862269A218AAEF8003464DE /* crypt.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = crypt.h; sourceTree = "<group>"; };
+		F862269B218AAEF8003464DE /* zip.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = zip.h; sourceTree = "<group>"; };
+		F862269C218AAEF8003464DE /* unzip.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = unzip.h; sourceTree = "<group>"; };
+		F862269D218AAEF8003464DE /* ioapi_mem.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = ioapi_mem.c; sourceTree = "<group>"; };
+		F862269E218AAEF8003464DE /* minishared.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = minishared.c; sourceTree = "<group>"; };
+		F862269F218AAEF8003464DE /* ioapi.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ioapi.h; sourceTree = "<group>"; };
+		F86226A0218AAEF8003464DE /* ioapi_buf.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ioapi_buf.h; sourceTree = "<group>"; };
+		F86226A2218AAEF8003464DE /* prng.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = prng.h; sourceTree = "<group>"; };
+		F86226A3218AAEF8003464DE /* aes_ni.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = aes_ni.h; sourceTree = "<group>"; };
+		F86226A4218AAEF8003464DE /* aeskey.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = aeskey.c; sourceTree = "<group>"; };
+		F86226A5218AAEF8003464DE /* hmac.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = hmac.c; sourceTree = "<group>"; };
+		F86226A6218AAEF8003464DE /* aestab.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = aestab.h; sourceTree = "<group>"; };
+		F86226A7218AAEF8003464DE /* pwd2key.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = pwd2key.h; sourceTree = "<group>"; };
+		F86226A8218AAEF8003464DE /* aescrypt.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = aescrypt.c; sourceTree = "<group>"; };
+		F86226A9218AAEF8003464DE /* fileenc.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = fileenc.c; sourceTree = "<group>"; };
+		F86226AA218AAEF8003464DE /* aesopt.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = aesopt.h; sourceTree = "<group>"; };
+		F86226AB218AAEF8003464DE /* sha1.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = sha1.c; sourceTree = "<group>"; };
+		F86226AC218AAEF8003464DE /* brg_types.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = brg_types.h; sourceTree = "<group>"; };
+		F86226AD218AAEF8003464DE /* hmac.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = hmac.h; sourceTree = "<group>"; };
+		F86226AE218AAEF8003464DE /* aes_ni.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = aes_ni.c; sourceTree = "<group>"; };
+		F86226AF218AAEF8003464DE /* brg_endian.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = brg_endian.h; sourceTree = "<group>"; };
+		F86226B0218AAEF8003464DE /* prng.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = prng.c; sourceTree = "<group>"; };
+		F86226B1218AAEF8003464DE /* aes.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = aes.h; sourceTree = "<group>"; };
+		F86226B2218AAEF8003464DE /* pwd2key.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = pwd2key.c; sourceTree = "<group>"; };
+		F86226B3218AAEF8003464DE /* aestab.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = aestab.c; sourceTree = "<group>"; };
+		F86226B4218AAEF8003464DE /* sha1.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = sha1.h; sourceTree = "<group>"; };
+		F86226B5218AAEF8003464DE /* fileenc.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = fileenc.h; sourceTree = "<group>"; };
+		F86226B6218AAEF8003464DE /* SSZipArchive.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SSZipArchive.h; sourceTree = "<group>"; };
+		F86226B7218AAEF8003464DE /* SSZipCommon.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SSZipCommon.h; sourceTree = "<group>"; };
+		F86226B8218AAEF8003464DE /* SSZipArchive.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SSZipArchive.m; sourceTree = "<group>"; };
+		F86226B9218AAEF8003464DE /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		F89B9BCD217720F600C30579 /* UserDefaultsModule.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = UserDefaultsModule.m; sourceTree = "<group>"; };
+		F89B9BCE217720F600C30579 /* UserDefaultsModule.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UserDefaultsModule.h; sourceTree = "<group>"; };
+		F89B9C1D2177309500C30579 /* ART.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = ART.xcodeproj; path = "../node_modules/react-native/Libraries/ART/ART.xcodeproj"; sourceTree = "<group>"; };
+		F8C1A8E4216DD69700C9EA47 /* libz.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libz.tbd; path = usr/lib/libz.tbd; sourceTree = SDKROOT; };
+		F8C1A8E6216DD69E00C9EA47 /* libbz2.1.0.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libbz2.1.0.tbd; path = usr/lib/libbz2.1.0.tbd; sourceTree = SDKROOT; };
+		F8CC11D52189C49200D62488 /* SRHotUpdate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SRHotUpdate.h; sourceTree = "<group>"; };
+		F8CC11D62189C49200D62488 /* SRHotUpdate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SRHotUpdate.m; sourceTree = "<group>"; };
+		F8CC11D82189C62D00D62488 /* SRHotUpdateTask.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SRHotUpdateTask.h; sourceTree = "<group>"; };
+		F8CC11D92189C62D00D62488 /* SRHotUpdateTask.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SRHotUpdateTask.m; sourceTree = "<group>"; };
+		F8CC11DB2189C67000D62488 /* SRHotUpdateManager.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SRHotUpdateManager.h; sourceTree = "<group>"; };
+		F8CC11DC2189C67000D62488 /* SRHotUpdateManager.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SRHotUpdateManager.m; sourceTree = "<group>"; };
+		F8CC11DE2189CA4A00D62488 /* SRHotUpdateDownLoader.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SRHotUpdateDownLoader.h; sourceTree = "<group>"; };
+		F8CC11DF2189CA4A00D62488 /* SRHotUpdateDownLoader.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SRHotUpdateDownLoader.m; sourceTree = "<group>"; };
+		F8CC11E42189DADA00D62488 /* SRHotUpdateTaskModel.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SRHotUpdateTaskModel.h; sourceTree = "<group>"; };
+		F8CC11E52189DADA00D62488 /* SRHotUpdateTaskModel.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SRHotUpdateTaskModel.m; sourceTree = "<group>"; };
+		FBDB204D1F8F49A7B51DEB5A /* libRNImagePicker.a */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = archive.ar; path = libRNImagePicker.a; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		13B07F8C1A680F5B00A75B9A /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F8474449217F16C70005278B /* UserNotifications.framework in Frameworks */,
+				F8474447217F15040005278B /* SystemConfiguration.framework in Frameworks */,
+				F8474445217F14F40005278B /* CoreTelephony.framework in Frameworks */,
+				F8474443217F14E20005278B /* libsqlite3.tbd in Frameworks */,
+				F89B9C4C2177309B00C30579 /* libART.a in Frameworks */,
+				F8C1A8E7216DD69F00C9EA47 /* libbz2.1.0.tbd in Frameworks */,
+				F847443F217F13D10005278B /* SecurityEnvSDK.framework in Frameworks */,
+				F8C1A8E5216DD69700C9EA47 /* libz.tbd in Frameworks */,
+				ADBDB9381DFEBF1600ED6528 /* libRCTBlob.a in Frameworks */,
+				5E9157361DD0AC6A00FF2AA8 /* libRCTAnimation.a in Frameworks */,
+				146834051AC3E58100842450 /* libReact.a in Frameworks */,
+				5E9157361DD0AC6A00FF2AA8 /* libRCTAnimation.a in Frameworks */,
+				F8474441217F13D10005278B /* UMCommon.framework in Frameworks */,
+				00C302E51ABCBA2D00DB3ED1 /* libRCTActionSheet.a in Frameworks */,
+				F847443C217F13D10005278B /* UMCommonLog.framework in Frameworks */,
+				00C302E71ABCBA2D00DB3ED1 /* libRCTGeolocation.a in Frameworks */,
+				00C302E81ABCBA2D00DB3ED1 /* libRCTImage.a in Frameworks */,
+				133E29F31AD74F7200F7D852 /* libRCTLinking.a in Frameworks */,
+				00C302E91ABCBA2D00DB3ED1 /* libRCTNetwork.a in Frameworks */,
+				F847443E217F13D10005278B /* UTDID.framework in Frameworks */,
+				139105C61AF99C1200B5F7CC /* libRCTSettings.a in Frameworks */,
+				832341BD1AAA6AB300B99B32 /* libRCTText.a in Frameworks */,
+				00C302EA1ABCBA2D00DB3ED1 /* libRCTVibration.a in Frameworks */,
+				F8474440217F13D10005278B /* UMPush.framework in Frameworks */,
+				139FDEF61B0652A700C62182 /* libRCTWebSocket.a in Frameworks */,
+				0208F533A82F4237A79AB991 /* libRNImagePicker.a in Frameworks */,
+				C5C55D0593CE450FB4C35F6C /* libRCTBEEPickerManager.a in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		00C302A81ABCB8CE00DB3ED1 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				00C302AC1ABCB8CE00DB3ED1 /* libRCTActionSheet.a */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		00C302B61ABCB90400DB3ED1 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				00C302BA1ABCB90400DB3ED1 /* libRCTGeolocation.a */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		00C302BC1ABCB91800DB3ED1 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				00C302C01ABCB91800DB3ED1 /* libRCTImage.a */,
+				3DAD3E841DF850E9000B6D8A /* libRCTImage-tvOS.a */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		00C302D41ABCB9D200DB3ED1 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				00C302DC1ABCB9D200DB3ED1 /* libRCTNetwork.a */,
+				3DAD3E8C1DF850E9000B6D8A /* libRCTNetwork-tvOS.a */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		00C302E01ABCB9EE00DB3ED1 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				00C302E41ABCB9EE00DB3ED1 /* libRCTVibration.a */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		00E356EF1AD99517003FC87E /* SiemensPOCTests */ = {
+			isa = PBXGroup;
+			children = (
+				00E356F21AD99517003FC87E /* SiemensPOCTests.m */,
+				00E356F01AD99517003FC87E /* Supporting Files */,
+			);
+			path = SiemensPOCTests;
+			sourceTree = "<group>";
+		};
+		00E356F01AD99517003FC87E /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				00E356F11AD99517003FC87E /* Info.plist */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		139105B71AF99BAD00B5F7CC /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				139105C11AF99BAD00B5F7CC /* libRCTSettings.a */,
+				3DAD3E901DF850E9000B6D8A /* libRCTSettings-tvOS.a */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		139FDEE71B06529A00C62182 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				139FDEF41B06529B00C62182 /* libRCTWebSocket.a */,
+				3DAD3E991DF850E9000B6D8A /* libRCTWebSocket-tvOS.a */,
+				2D16E6841FA4F8DC00B85C8A /* libfishhook.a */,
+				2D16E6861FA4F8DC00B85C8A /* libfishhook-tvOS.a */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		13B07FAE1A68108700A75B9A /* SiemensPOC */ = {
+			isa = PBXGroup;
+			children = (
+				F847444A217F16E30005278B /* SiemensPOC.entitlements */,
+				F89B9BCA217720F600C30579 /* NativeCode */,
+				008F07F21AC5B25A0029DE68 /* main.jsbundle */,
+				13B07FAF1A68108700A75B9A /* AppDelegate.h */,
+				13B07FB01A68108700A75B9A /* AppDelegate.m */,
+				13B07FB51A68108700A75B9A /* Images.xcassets */,
+				13B07FB61A68108700A75B9A /* Info.plist */,
+				13B07FB11A68108700A75B9A /* LaunchScreen.xib */,
+				13B07FB71A68108700A75B9A /* main.m */,
+			);
+			name = SiemensPOC;
+			sourceTree = "<group>";
+		};
+		146834001AC3E56700842450 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				146834041AC3E56700842450 /* libReact.a */,
+				3DAD3EA31DF850E9000B6D8A /* libReact.a */,
+				3DAD3EA51DF850E9000B6D8A /* libyoga.a */,
+				3DAD3EA71DF850E9000B6D8A /* libyoga.a */,
+				3DAD3EA91DF850E9000B6D8A /* libcxxreact.a */,
+				3DAD3EAB1DF850E9000B6D8A /* libcxxreact.a */,
+				3DAD3EAD1DF850E9000B6D8A /* libjschelpers.a */,
+				3DAD3EAF1DF850E9000B6D8A /* libjschelpers.a */,
+				2DF0FFDF2056DD460020B375 /* libjsinspector.a */,
+				2DF0FFE12056DD460020B375 /* libjsinspector-tvOS.a */,
+				2DF0FFE32056DD460020B375 /* libthird-party.a */,
+				2DF0FFE52056DD460020B375 /* libthird-party.a */,
+				2DF0FFE72056DD460020B375 /* libdouble-conversion.a */,
+				2DF0FFE92056DD460020B375 /* libdouble-conversion.a */,
+				2DF0FFEB2056DD460020B375 /* libprivatedata.a */,
+				2DF0FFED2056DD460020B375 /* libprivatedata-tvOS.a */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		2D16E6871FA4F8E400B85C8A /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				F8474448217F16C70005278B /* UserNotifications.framework */,
+				F8474446217F15040005278B /* SystemConfiguration.framework */,
+				F8474444217F14F40005278B /* CoreTelephony.framework */,
+				F8474442217F14E20005278B /* libsqlite3.tbd */,
+				F89B9C1D2177309500C30579 /* ART.xcodeproj */,
+				F8C1A8E6216DD69E00C9EA47 /* libbz2.1.0.tbd */,
+				F8C1A8E4216DD69700C9EA47 /* libz.tbd */,
+				2D16E6891FA4F8E400B85C8A /* libReact.a */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		5E91572E1DD0AC6500FF2AA8 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				5E9157331DD0AC6500FF2AA8 /* libRCTAnimation.a */,
+				5E9157351DD0AC6500FF2AA8 /* libRCTAnimation.a */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		78C398B11ACF4ADC00677621 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				78C398B91ACF4ADC00677621 /* libRCTLinking.a */,
+				3DAD3E881DF850E9000B6D8A /* libRCTLinking-tvOS.a */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		832341AE1AAA6A7D00B99B32 /* Libraries */ = {
+			isa = PBXGroup;
+			children = (
+				5E91572D1DD0AC6500FF2AA8 /* RCTAnimation.xcodeproj */,
+				146833FF1AC3E56700842450 /* React.xcodeproj */,
+				00C302A71ABCB8CE00DB3ED1 /* RCTActionSheet.xcodeproj */,
+				ADBDB91F1DFEBF0600ED6528 /* RCTBlob.xcodeproj */,
+				00C302B51ABCB90400DB3ED1 /* RCTGeolocation.xcodeproj */,
+				00C302BB1ABCB91800DB3ED1 /* RCTImage.xcodeproj */,
+				78C398B01ACF4ADC00677621 /* RCTLinking.xcodeproj */,
+				00C302D31ABCB9D200DB3ED1 /* RCTNetwork.xcodeproj */,
+				139105B61AF99BAD00B5F7CC /* RCTSettings.xcodeproj */,
+				832341B01AAA6A8300B99B32 /* RCTText.xcodeproj */,
+				00C302DF1ABCB9EE00DB3ED1 /* RCTVibration.xcodeproj */,
+				139FDEE61B06529A00C62182 /* RCTWebSocket.xcodeproj */,
+				2642E7F4BFBA401DB102650A /* RNImagePicker.xcodeproj */,
+				8CAD67BBABEF4CCABB44408E /* RCTBEEPickerManager.xcodeproj */,
+			);
+			name = Libraries;
+			sourceTree = "<group>";
+		};
+		832341B11AAA6A8300B99B32 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				832341B51AAA6A8300B99B32 /* libRCTText.a */,
+				3DAD3E941DF850E9000B6D8A /* libRCTText-tvOS.a */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		83CBB9F61A601CBA00E9B192 = {
+			isa = PBXGroup;
+			children = (
+				13B07FAE1A68108700A75B9A /* SiemensPOC */,
+				832341AE1AAA6A7D00B99B32 /* Libraries */,
+				00E356EF1AD99517003FC87E /* SiemensPOCTests */,
+				83CBBA001A601CBA00E9B192 /* Products */,
+				2D16E6871FA4F8E400B85C8A /* Frameworks */,
+				F8C1A8B9216DD62000C9EA47 /* Recovered References */,
+			);
+			indentWidth = 2;
+			sourceTree = "<group>";
+			tabWidth = 2;
+			usesTabs = 0;
+		};
+		83CBBA001A601CBA00E9B192 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				13B07F961A680F5B00A75B9A /* SiemensPOC.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		ADBDB9201DFEBF0600ED6528 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				ADBDB9271DFEBF0700ED6528 /* libRCTBlob.a */,
+				2D16E6721FA4F8DC00B85C8A /* libRCTBlob-tvOS.a */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		F847442A217F13D10005278B /* Others */ = {
+			isa = PBXGroup;
+			children = (
+				F8CC11D22189C46500D62488 /* Tools */,
+				F847442B217F13D10005278B /* Libs */,
+			);
+			path = Others;
+			sourceTree = "<group>";
+		};
+		F847442B217F13D10005278B /* Libs */ = {
+			isa = PBXGroup;
+			children = (
+				F8622690218AAEF8003464DE /* SSZipArchive */,
+				F847442C217F13D10005278B /* UMengSDK */,
+			);
+			path = Libs;
+			sourceTree = "<group>";
+		};
+		F847442C217F13D10005278B /* UMengSDK */ = {
+			isa = PBXGroup;
+			children = (
+				F849D6252181D85C0008FF20 /* bridge */,
+				F8474438217F13D10005278B /* common */,
+				F8474435217F13D10005278B /* push */,
+				F8474431217F13D10005278B /* thirdparties */,
+				F847442D217F13D10005278B /* umcommonlog */,
+			);
+			path = UMengSDK;
+			sourceTree = "<group>";
+		};
+		F847442D217F13D10005278B /* umcommonlog */ = {
+			isa = PBXGroup;
+			children = (
+				F847442E217F13D10005278B /* umcommonlog_ios_1.0.0 */,
+			);
+			path = umcommonlog;
+			sourceTree = "<group>";
+		};
+		F847442E217F13D10005278B /* umcommonlog_ios_1.0.0 */ = {
+			isa = PBXGroup;
+			children = (
+				F847442F217F13D10005278B /* UMCommonLog.framework */,
+				F8474430217F13D10005278B /* UMCommonLog.bundle */,
+			);
+			path = umcommonlog_ios_1.0.0;
+			sourceTree = "<group>";
+		};
+		F8474431217F13D10005278B /* thirdparties */ = {
+			isa = PBXGroup;
+			children = (
+				F8474432217F13D10005278B /* thirdparties_ios_1.0.5 */,
+			);
+			path = thirdparties;
+			sourceTree = "<group>";
+		};
+		F8474432217F13D10005278B /* thirdparties_ios_1.0.5 */ = {
+			isa = PBXGroup;
+			children = (
+				F8474433217F13D10005278B /* UTDID.framework */,
+				F8474434217F13D10005278B /* SecurityEnvSDK.framework */,
+			);
+			path = thirdparties_ios_1.0.5;
+			sourceTree = "<group>";
+		};
+		F8474435217F13D10005278B /* push */ = {
+			isa = PBXGroup;
+			children = (
+				F8474436217F13D10005278B /* push_ios_3.2.3 */,
+			);
+			path = push;
+			sourceTree = "<group>";
+		};
+		F8474436217F13D10005278B /* push_ios_3.2.3 */ = {
+			isa = PBXGroup;
+			children = (
+				F8474437217F13D10005278B /* UMPush.framework */,
+			);
+			path = push_ios_3.2.3;
+			sourceTree = "<group>";
+		};
+		F8474438217F13D10005278B /* common */ = {
+			isa = PBXGroup;
+			children = (
+				F8474439217F13D10005278B /* common_ios_1.5.2 */,
+			);
+			path = common;
+			sourceTree = "<group>";
+		};
+		F8474439217F13D10005278B /* common_ios_1.5.2 */ = {
+			isa = PBXGroup;
+			children = (
+				F847443A217F13D10005278B /* normal */,
+			);
+			path = common_ios_1.5.2;
+			sourceTree = "<group>";
+		};
+		F847443A217F13D10005278B /* normal */ = {
+			isa = PBXGroup;
+			children = (
+				F847443B217F13D10005278B /* UMCommon.framework */,
+			);
+			path = normal;
+			sourceTree = "<group>";
+		};
+		F849D6252181D85C0008FF20 /* bridge */ = {
+			isa = PBXGroup;
+			children = (
+				F849D6542181DAD20008FF20 /* RNUMConfigure.h */,
+				F849D6532181DAD20008FF20 /* RNUMConfigure.m */,
+				F849D6272181D85C0008FF20 /* UMPushModule.h */,
+				F849D6262181D85C0008FF20 /* UMPushModule.m */,
+			);
+			path = bridge;
+			sourceTree = "<group>";
+		};
+		F8622690218AAEF8003464DE /* SSZipArchive */ = {
+			isa = PBXGroup;
+			children = (
+				F8622691218AAEF8003464DE /* ZipArchive.h */,
+				F8622692218AAEF8003464DE /* minizip */,
+				F86226B6218AAEF8003464DE /* SSZipArchive.h */,
+				F86226B7218AAEF8003464DE /* SSZipCommon.h */,
+				F86226B8218AAEF8003464DE /* SSZipArchive.m */,
+				F86226B9218AAEF8003464DE /* Info.plist */,
+			);
+			path = SSZipArchive;
+			sourceTree = "<group>";
+		};
+		F8622692218AAEF8003464DE /* minizip */ = {
+			isa = PBXGroup;
+			children = (
+				F8622693218AAEF8003464DE /* crypt.c */,
+				F8622694218AAEF8003464DE /* unzip.c */,
+				F8622695218AAEF8003464DE /* zip.c */,
+				F8622696218AAEF8003464DE /* minishared.h */,
+				F8622697218AAEF8003464DE /* ioapi.c */,
+				F8622698218AAEF8003464DE /* ioapi_mem.h */,
+				F8622699218AAEF8003464DE /* ioapi_buf.c */,
+				F862269A218AAEF8003464DE /* crypt.h */,
+				F862269B218AAEF8003464DE /* zip.h */,
+				F862269C218AAEF8003464DE /* unzip.h */,
+				F862269D218AAEF8003464DE /* ioapi_mem.c */,
+				F862269E218AAEF8003464DE /* minishared.c */,
+				F862269F218AAEF8003464DE /* ioapi.h */,
+				F86226A0218AAEF8003464DE /* ioapi_buf.h */,
+				F86226A1218AAEF8003464DE /* aes */,
+			);
+			path = minizip;
+			sourceTree = "<group>";
+		};
+		F86226A1218AAEF8003464DE /* aes */ = {
+			isa = PBXGroup;
+			children = (
+				F86226A2218AAEF8003464DE /* prng.h */,
+				F86226A3218AAEF8003464DE /* aes_ni.h */,
+				F86226A4218AAEF8003464DE /* aeskey.c */,
+				F86226A5218AAEF8003464DE /* hmac.c */,
+				F86226A6218AAEF8003464DE /* aestab.h */,
+				F86226A7218AAEF8003464DE /* pwd2key.h */,
+				F86226A8218AAEF8003464DE /* aescrypt.c */,
+				F86226A9218AAEF8003464DE /* fileenc.c */,
+				F86226AA218AAEF8003464DE /* aesopt.h */,
+				F86226AB218AAEF8003464DE /* sha1.c */,
+				F86226AC218AAEF8003464DE /* brg_types.h */,
+				F86226AD218AAEF8003464DE /* hmac.h */,
+				F86226AE218AAEF8003464DE /* aes_ni.c */,
+				F86226AF218AAEF8003464DE /* brg_endian.h */,
+				F86226B0218AAEF8003464DE /* prng.c */,
+				F86226B1218AAEF8003464DE /* aes.h */,
+				F86226B2218AAEF8003464DE /* pwd2key.c */,
+				F86226B3218AAEF8003464DE /* aestab.c */,
+				F86226B4218AAEF8003464DE /* sha1.h */,
+				F86226B5218AAEF8003464DE /* fileenc.h */,
+			);
+			path = aes;
+			sourceTree = "<group>";
+		};
+		F892BC2A21787EC4007D38DE /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				F892BC2E21787EC4007D38DE /* libRNImagePicker.a */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		F89456DE2181930E0085C681 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				F89456E22181930E0085C681 /* libRCTBEEPickerManager.a */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		F89B9BCA217720F600C30579 /* NativeCode */ = {
+			isa = PBXGroup;
+			children = (
+				F89B9BCB217720F600C30579 /* Classes */,
+				F89B9BCC217720F600C30579 /* Module */,
+			);
+			name = NativeCode;
+			path = SiemensPOC/NativeCode;
+			sourceTree = "<group>";
+		};
+		F89B9BCB217720F600C30579 /* Classes */ = {
+			isa = PBXGroup;
+			children = (
+				F847442A217F13D10005278B /* Others */,
+			);
+			path = Classes;
+			sourceTree = "<group>";
+		};
+		F89B9BCC217720F600C30579 /* Module */ = {
+			isa = PBXGroup;
+			children = (
+				F89B9BCE217720F600C30579 /* UserDefaultsModule.h */,
+				F89B9BCD217720F600C30579 /* UserDefaultsModule.m */,
+			);
+			path = Module;
+			sourceTree = "<group>";
+		};
+		F89B9C1E2177309500C30579 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				F89B9C232177309500C30579 /* libART.a */,
+				F89B9C252177309500C30579 /* libART-tvOS.a */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		F8C1A8B9216DD62000C9EA47 /* Recovered References */ = {
+			isa = PBXGroup;
+			children = (
+				67B366551A714589B4292C6C /* libRCTHotUpdate.a */,
+				FBDB204D1F8F49A7B51DEB5A /* libRNImagePicker.a */,
+				A000E520360143E29178289D /* libRCTBEEPickerManager.a */,
+			);
+			name = "Recovered References";
+			sourceTree = "<group>";
+		};
+		F8CC11D22189C46500D62488 /* Tools */ = {
+			isa = PBXGroup;
+			children = (
+				F8CC11D42189C48800D62488 /* SRHotUpdate */,
+			);
+			path = Tools;
+			sourceTree = "<group>";
+		};
+		F8CC11D42189C48800D62488 /* SRHotUpdate */ = {
+			isa = PBXGroup;
+			children = (
+				F8CC11D52189C49200D62488 /* SRHotUpdate.h */,
+				F8CC11D62189C49200D62488 /* SRHotUpdate.m */,
+				F8CC11DE2189CA4A00D62488 /* SRHotUpdateDownLoader.h */,
+				F8CC11DF2189CA4A00D62488 /* SRHotUpdateDownLoader.m */,
+				F8CC11DB2189C67000D62488 /* SRHotUpdateManager.h */,
+				F8CC11DC2189C67000D62488 /* SRHotUpdateManager.m */,
+				F8CC11D82189C62D00D62488 /* SRHotUpdateTask.h */,
+				F8CC11D92189C62D00D62488 /* SRHotUpdateTask.m */,
+				F8CC11E42189DADA00D62488 /* SRHotUpdateTaskModel.h */,
+				F8CC11E52189DADA00D62488 /* SRHotUpdateTaskModel.m */,
+			);
+			path = SRHotUpdate;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		13B07F861A680F5B00A75B9A /* SiemensPOC */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 13B07F931A680F5B00A75B9A /* Build configuration list for PBXNativeTarget "SiemensPOC" */;
+			buildPhases = (
+				13B07F871A680F5B00A75B9A /* Sources */,
+				13B07F8C1A680F5B00A75B9A /* Frameworks */,
+				13B07F8E1A680F5B00A75B9A /* Resources */,
+				00DD1BFF1BD5951E006B06BC /* Bundle React Native code and images */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = SiemensPOC;
+			productName = "Hello World";
+			productReference = 13B07F961A680F5B00A75B9A /* SiemensPOC.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		83CBB9F71A601CBA00E9B192 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 610;
+				ORGANIZATIONNAME = Facebook;
+				TargetAttributes = {
+					13B07F861A680F5B00A75B9A = {
+						DevelopmentTeam = 53GV2MSPL3;
+						SystemCapabilities = {
+							com.apple.BackgroundModes = {
+								enabled = 1;
+							};
+							com.apple.Push = {
+								enabled = 1;
+							};
+						};
+					};
+				};
+			};
+			buildConfigurationList = 83CBB9FA1A601CBA00E9B192 /* Build configuration list for PBXProject "SiemensPOC" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 83CBB9F61A601CBA00E9B192;
+			productRefGroup = 83CBBA001A601CBA00E9B192 /* Products */;
+			projectDirPath = "";
+			projectReferences = (
+				{
+					ProductGroup = F89B9C1E2177309500C30579 /* Products */;
+					ProjectRef = F89B9C1D2177309500C30579 /* ART.xcodeproj */;
+				},
+				{
+					ProductGroup = 00C302A81ABCB8CE00DB3ED1 /* Products */;
+					ProjectRef = 00C302A71ABCB8CE00DB3ED1 /* RCTActionSheet.xcodeproj */;
+				},
+				{
+					ProductGroup = 5E91572E1DD0AC6500FF2AA8 /* Products */;
+					ProjectRef = 5E91572D1DD0AC6500FF2AA8 /* RCTAnimation.xcodeproj */;
+				},
+				{
+					ProductGroup = F89456DE2181930E0085C681 /* Products */;
+					ProjectRef = 8CAD67BBABEF4CCABB44408E /* RCTBEEPickerManager.xcodeproj */;
+				},
+				{
+					ProductGroup = ADBDB9201DFEBF0600ED6528 /* Products */;
+					ProjectRef = ADBDB91F1DFEBF0600ED6528 /* RCTBlob.xcodeproj */;
+				},
+				{
+					ProductGroup = 00C302B61ABCB90400DB3ED1 /* Products */;
+					ProjectRef = 00C302B51ABCB90400DB3ED1 /* RCTGeolocation.xcodeproj */;
+				},
+				{
+					ProductGroup = 00C302BC1ABCB91800DB3ED1 /* Products */;
+					ProjectRef = 00C302BB1ABCB91800DB3ED1 /* RCTImage.xcodeproj */;
+				},
+				{
+					ProductGroup = 78C398B11ACF4ADC00677621 /* Products */;
+					ProjectRef = 78C398B01ACF4ADC00677621 /* RCTLinking.xcodeproj */;
+				},
+				{
+					ProductGroup = 00C302D41ABCB9D200DB3ED1 /* Products */;
+					ProjectRef = 00C302D31ABCB9D200DB3ED1 /* RCTNetwork.xcodeproj */;
+				},
+				{
+					ProductGroup = 139105B71AF99BAD00B5F7CC /* Products */;
+					ProjectRef = 139105B61AF99BAD00B5F7CC /* RCTSettings.xcodeproj */;
+				},
+				{
+					ProductGroup = 832341B11AAA6A8300B99B32 /* Products */;
+					ProjectRef = 832341B01AAA6A8300B99B32 /* RCTText.xcodeproj */;
+				},
+				{
+					ProductGroup = 00C302E01ABCB9EE00DB3ED1 /* Products */;
+					ProjectRef = 00C302DF1ABCB9EE00DB3ED1 /* RCTVibration.xcodeproj */;
+				},
+				{
+					ProductGroup = 139FDEE71B06529A00C62182 /* Products */;
+					ProjectRef = 139FDEE61B06529A00C62182 /* RCTWebSocket.xcodeproj */;
+				},
+				{
+					ProductGroup = 146834001AC3E56700842450 /* Products */;
+					ProjectRef = 146833FF1AC3E56700842450 /* React.xcodeproj */;
+				},
+				{
+					ProductGroup = F892BC2A21787EC4007D38DE /* Products */;
+					ProjectRef = 2642E7F4BFBA401DB102650A /* RNImagePicker.xcodeproj */;
+				},
+			);
+			projectRoot = "";
+			targets = (
+				13B07F861A680F5B00A75B9A /* SiemensPOC */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXReferenceProxy section */
+		00C302AC1ABCB8CE00DB3ED1 /* libRCTActionSheet.a */ = {
+			isa = PBXReferenceProxy;
+			fileType = archive.ar;
+			path = libRCTActionSheet.a;
+			remoteRef = 00C302AB1ABCB8CE00DB3ED1 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		00C302BA1ABCB90400DB3ED1 /* libRCTGeolocation.a */ = {
+			isa = PBXReferenceProxy;
+			fileType = archive.ar;
+			path = libRCTGeolocation.a;
+			remoteRef = 00C302B91ABCB90400DB3ED1 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		00C302C01ABCB91800DB3ED1 /* libRCTImage.a */ = {
+			isa = PBXReferenceProxy;
+			fileType = archive.ar;
+			path = libRCTImage.a;
+			remoteRef = 00C302BF1ABCB91800DB3ED1 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		00C302DC1ABCB9D200DB3ED1 /* libRCTNetwork.a */ = {
+			isa = PBXReferenceProxy;
+			fileType = archive.ar;
+			path = libRCTNetwork.a;
+			remoteRef = 00C302DB1ABCB9D200DB3ED1 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		00C302E41ABCB9EE00DB3ED1 /* libRCTVibration.a */ = {
+			isa = PBXReferenceProxy;
+			fileType = archive.ar;
+			path = libRCTVibration.a;
+			remoteRef = 00C302E31ABCB9EE00DB3ED1 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		139105C11AF99BAD00B5F7CC /* libRCTSettings.a */ = {
+			isa = PBXReferenceProxy;
+			fileType = archive.ar;
+			path = libRCTSettings.a;
+			remoteRef = 139105C01AF99BAD00B5F7CC /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		139FDEF41B06529B00C62182 /* libRCTWebSocket.a */ = {
+			isa = PBXReferenceProxy;
+			fileType = archive.ar;
+			path = libRCTWebSocket.a;
+			remoteRef = 139FDEF31B06529B00C62182 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		146834041AC3E56700842450 /* libReact.a */ = {
+			isa = PBXReferenceProxy;
+			fileType = archive.ar;
+			path = libReact.a;
+			remoteRef = 146834031AC3E56700842450 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		2D16E6721FA4F8DC00B85C8A /* libRCTBlob-tvOS.a */ = {
+			isa = PBXReferenceProxy;
+			fileType = archive.ar;
+			path = "libRCTBlob-tvOS.a";
+			remoteRef = 2D16E6711FA4F8DC00B85C8A /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		2D16E6841FA4F8DC00B85C8A /* libfishhook.a */ = {
+			isa = PBXReferenceProxy;
+			fileType = archive.ar;
+			path = libfishhook.a;
+			remoteRef = 2D16E6831FA4F8DC00B85C8A /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		2D16E6861FA4F8DC00B85C8A /* libfishhook-tvOS.a */ = {
+			isa = PBXReferenceProxy;
+			fileType = archive.ar;
+			path = "libfishhook-tvOS.a";
+			remoteRef = 2D16E6851FA4F8DC00B85C8A /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		2DF0FFDF2056DD460020B375 /* libjsinspector.a */ = {
+			isa = PBXReferenceProxy;
+			fileType = archive.ar;
+			path = libjsinspector.a;
+			remoteRef = 2DF0FFDE2056DD460020B375 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		2DF0FFE12056DD460020B375 /* libjsinspector-tvOS.a */ = {
+			isa = PBXReferenceProxy;
+			fileType = archive.ar;
+			path = "libjsinspector-tvOS.a";
+			remoteRef = 2DF0FFE02056DD460020B375 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		2DF0FFE32056DD460020B375 /* libthird-party.a */ = {
+			isa = PBXReferenceProxy;
+			fileType = archive.ar;
+			path = "libthird-party.a";
+			remoteRef = 2DF0FFE22056DD460020B375 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		2DF0FFE52056DD460020B375 /* libthird-party.a */ = {
+			isa = PBXReferenceProxy;
+			fileType = archive.ar;
+			path = "libthird-party.a";
+			remoteRef = 2DF0FFE42056DD460020B375 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		2DF0FFE72056DD460020B375 /* libdouble-conversion.a */ = {
+			isa = PBXReferenceProxy;
+			fileType = archive.ar;
+			path = "libdouble-conversion.a";
+			remoteRef = 2DF0FFE62056DD460020B375 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		2DF0FFE92056DD460020B375 /* libdouble-conversion.a */ = {
+			isa = PBXReferenceProxy;
+			fileType = archive.ar;
+			path = "libdouble-conversion.a";
+			remoteRef = 2DF0FFE82056DD460020B375 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		2DF0FFEB2056DD460020B375 /* libprivatedata.a */ = {
+			isa = PBXReferenceProxy;
+			fileType = archive.ar;
+			path = libprivatedata.a;
+			remoteRef = 2DF0FFEA2056DD460020B375 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		2DF0FFED2056DD460020B375 /* libprivatedata-tvOS.a */ = {
+			isa = PBXReferenceProxy;
+			fileType = archive.ar;
+			path = "libprivatedata-tvOS.a";
+			remoteRef = 2DF0FFEC2056DD460020B375 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		3DAD3E841DF850E9000B6D8A /* libRCTImage-tvOS.a */ = {
+			isa = PBXReferenceProxy;
+			fileType = archive.ar;
+			path = "libRCTImage-tvOS.a";
+			remoteRef = 3DAD3E831DF850E9000B6D8A /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		3DAD3E881DF850E9000B6D8A /* libRCTLinking-tvOS.a */ = {
+			isa = PBXReferenceProxy;
+			fileType = archive.ar;
+			path = "libRCTLinking-tvOS.a";
+			remoteRef = 3DAD3E871DF850E9000B6D8A /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		3DAD3E8C1DF850E9000B6D8A /* libRCTNetwork-tvOS.a */ = {
+			isa = PBXReferenceProxy;
+			fileType = archive.ar;
+			path = "libRCTNetwork-tvOS.a";
+			remoteRef = 3DAD3E8B1DF850E9000B6D8A /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		3DAD3E901DF850E9000B6D8A /* libRCTSettings-tvOS.a */ = {
+			isa = PBXReferenceProxy;
+			fileType = archive.ar;
+			path = "libRCTSettings-tvOS.a";
+			remoteRef = 3DAD3E8F1DF850E9000B6D8A /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		3DAD3E941DF850E9000B6D8A /* libRCTText-tvOS.a */ = {
+			isa = PBXReferenceProxy;
+			fileType = archive.ar;
+			path = "libRCTText-tvOS.a";
+			remoteRef = 3DAD3E931DF850E9000B6D8A /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		3DAD3E991DF850E9000B6D8A /* libRCTWebSocket-tvOS.a */ = {
+			isa = PBXReferenceProxy;
+			fileType = archive.ar;
+			path = "libRCTWebSocket-tvOS.a";
+			remoteRef = 3DAD3E981DF850E9000B6D8A /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		3DAD3EA31DF850E9000B6D8A /* libReact.a */ = {
+			isa = PBXReferenceProxy;
+			fileType = archive.ar;
+			path = libReact.a;
+			remoteRef = 3DAD3EA21DF850E9000B6D8A /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		3DAD3EA51DF850E9000B6D8A /* libyoga.a */ = {
+			isa = PBXReferenceProxy;
+			fileType = archive.ar;
+			path = libyoga.a;
+			remoteRef = 3DAD3EA41DF850E9000B6D8A /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		3DAD3EA71DF850E9000B6D8A /* libyoga.a */ = {
+			isa = PBXReferenceProxy;
+			fileType = archive.ar;
+			path = libyoga.a;
+			remoteRef = 3DAD3EA61DF850E9000B6D8A /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		3DAD3EA91DF850E9000B6D8A /* libcxxreact.a */ = {
+			isa = PBXReferenceProxy;
+			fileType = archive.ar;
+			path = libcxxreact.a;
+			remoteRef = 3DAD3EA81DF850E9000B6D8A /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		3DAD3EAB1DF850E9000B6D8A /* libcxxreact.a */ = {
+			isa = PBXReferenceProxy;
+			fileType = archive.ar;
+			path = libcxxreact.a;
+			remoteRef = 3DAD3EAA1DF850E9000B6D8A /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		3DAD3EAD1DF850E9000B6D8A /* libjschelpers.a */ = {
+			isa = PBXReferenceProxy;
+			fileType = archive.ar;
+			path = libjschelpers.a;
+			remoteRef = 3DAD3EAC1DF850E9000B6D8A /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		3DAD3EAF1DF850E9000B6D8A /* libjschelpers.a */ = {
+			isa = PBXReferenceProxy;
+			fileType = archive.ar;
+			path = libjschelpers.a;
+			remoteRef = 3DAD3EAE1DF850E9000B6D8A /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		5E9157331DD0AC6500FF2AA8 /* libRCTAnimation.a */ = {
+			isa = PBXReferenceProxy;
+			fileType = archive.ar;
+			path = libRCTAnimation.a;
+			remoteRef = 5E9157321DD0AC6500FF2AA8 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		5E9157351DD0AC6500FF2AA8 /* libRCTAnimation.a */ = {
+			isa = PBXReferenceProxy;
+			fileType = archive.ar;
+			path = libRCTAnimation.a;
+			remoteRef = 5E9157341DD0AC6500FF2AA8 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		78C398B91ACF4ADC00677621 /* libRCTLinking.a */ = {
+			isa = PBXReferenceProxy;
+			fileType = archive.ar;
+			path = libRCTLinking.a;
+			remoteRef = 78C398B81ACF4ADC00677621 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		832341B51AAA6A8300B99B32 /* libRCTText.a */ = {
+			isa = PBXReferenceProxy;
+			fileType = archive.ar;
+			path = libRCTText.a;
+			remoteRef = 832341B41AAA6A8300B99B32 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		ADBDB9271DFEBF0700ED6528 /* libRCTBlob.a */ = {
+			isa = PBXReferenceProxy;
+			fileType = archive.ar;
+			path = libRCTBlob.a;
+			remoteRef = ADBDB9261DFEBF0700ED6528 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		F892BC2E21787EC4007D38DE /* libRNImagePicker.a */ = {
+			isa = PBXReferenceProxy;
+			fileType = archive.ar;
+			path = libRNImagePicker.a;
+			remoteRef = F892BC2D21787EC4007D38DE /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		F89456E22181930E0085C681 /* libRCTBEEPickerManager.a */ = {
+			isa = PBXReferenceProxy;
+			fileType = archive.ar;
+			path = libRCTBEEPickerManager.a;
+			remoteRef = F89456E12181930E0085C681 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		F89B9C232177309500C30579 /* libART.a */ = {
+			isa = PBXReferenceProxy;
+			fileType = archive.ar;
+			path = libART.a;
+			remoteRef = F89B9C222177309500C30579 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		F89B9C252177309500C30579 /* libART-tvOS.a */ = {
+			isa = PBXReferenceProxy;
+			fileType = archive.ar;
+			path = "libART-tvOS.a";
+			remoteRef = F89B9C242177309500C30579 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+/* End PBXReferenceProxy section */
+
+/* Begin PBXResourcesBuildPhase section */
+		13B07F8E1A680F5B00A75B9A /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F86226CB218AAEF8003464DE /* Info.plist in Resources */,
+				F847443D217F13D10005278B /* UMCommonLog.bundle in Resources */,
+				13B07FBF1A68108700A75B9A /* Images.xcassets in Resources */,
+				13B07FBD1A68108700A75B9A /* LaunchScreen.xib in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		00DD1BFF1BD5951E006B06BC /* Bundle React Native code and images */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Bundle React Native code and images";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "export NODE_BINARY=node\n../node_modules/react-native/scripts/react-native-xcode.sh\n";
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		13B07F871A680F5B00A75B9A /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F86226BE218AAEF8003464DE /* ioapi_buf.c in Sources */,
+				F89B9BF5217720F600C30579 /* UserDefaultsModule.m in Sources */,
+				F849D6522181D85C0008FF20 /* UMPushModule.m in Sources */,
+				F849D6552181DAD20008FF20 /* RNUMConfigure.m in Sources */,
+				F8CC11DA2189C62D00D62488 /* SRHotUpdateTask.m in Sources */,
+				F8CC11D72189C49200D62488 /* SRHotUpdate.m in Sources */,
+				F86226C7218AAEF8003464DE /* prng.c in Sources */,
+				F86226C5218AAEF8003464DE /* sha1.c in Sources */,
+				F8CC11DD2189C67000D62488 /* SRHotUpdateManager.m in Sources */,
+				F86226BD218AAEF8003464DE /* ioapi.c in Sources */,
+				F86226C0218AAEF8003464DE /* minishared.c in Sources */,
+				F86226CA218AAEF8003464DE /* SSZipArchive.m in Sources */,
+				F86226C8218AAEF8003464DE /* pwd2key.c in Sources */,
+				F86226BB218AAEF8003464DE /* unzip.c in Sources */,
+				13B07FBC1A68108700A75B9A /* AppDelegate.m in Sources */,
+				13B07FC11A68108700A75B9A /* main.m in Sources */,
+				F86226C9218AAEF8003464DE /* aestab.c in Sources */,
+				F86226C4218AAEF8003464DE /* fileenc.c in Sources */,
+				F86226C2218AAEF8003464DE /* hmac.c in Sources */,
+				F8CC11E02189CA4A00D62488 /* SRHotUpdateDownLoader.m in Sources */,
+				F86226BF218AAEF8003464DE /* ioapi_mem.c in Sources */,
+				F86226BC218AAEF8003464DE /* zip.c in Sources */,
+				F86226C1218AAEF8003464DE /* aeskey.c in Sources */,
+				F86226BA218AAEF8003464DE /* crypt.c in Sources */,
+				F86226C3218AAEF8003464DE /* aescrypt.c in Sources */,
+				F8CC11E62189DADA00D62488 /* SRHotUpdateTaskModel.m in Sources */,
+				F86226C6218AAEF8003464DE /* aes_ni.c in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		13B07FB11A68108700A75B9A /* LaunchScreen.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				13B07FB21A68108700A75B9A /* Base */,
+			);
+			name = LaunchScreen.xib;
+			path = SiemensPOC;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		13B07F941A680F5B00A75B9A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = SiemensPOC/SiemensPOC.entitlements;
+				CURRENT_PROJECT_VERSION = 1;
+				DEAD_CODE_STRIPPING = NO;
+				DEVELOPMENT_TEAM = 53GV2MSPL3;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/SiemensPOC/NativeCode/Classes/Others/Libs/UMengSDK/umcommonlog/umcommonlog_ios_1.0.0",
+					"$(PROJECT_DIR)/SiemensPOC/NativeCode/Classes/Others/Libs/UMengSDK/thirdparties/thirdparties_ios_1.0.5",
+					"$(PROJECT_DIR)/SiemensPOC/NativeCode/Classes/Others/Libs/UMengSDK/push/push_ios_3.2.3",
+					"$(PROJECT_DIR)/SiemensPOC/NativeCode/Classes/Others/Libs/UMengSDK/common/common_ios_1.5.2/normal",
+				);
+				HEADER_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(SRCROOT)/../node_modules/react-native-image-picker/ios",
+					"$(SRCROOT)/../node_modules/react-native-picker/ios/RCTBEEPickerManager",
+				);
+				INFOPLIST_FILE = SiemensPOC/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+				);
+				OTHER_LDFLAGS = (
+					"$(inherited)",
+					"-ObjC",
+					"-lc++",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.wicresoft.SiemensPOC;
+				PRODUCT_NAME = SiemensPOC;
+				VERSIONING_SYSTEM = "apple-generic";
+			};
+			name = Debug;
+		};
+		13B07F951A680F5B00A75B9A /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = SiemensPOC/SiemensPOC.entitlements;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 53GV2MSPL3;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/SiemensPOC/NativeCode/Classes/Others/Libs/UMengSDK/umcommonlog/umcommonlog_ios_1.0.0",
+					"$(PROJECT_DIR)/SiemensPOC/NativeCode/Classes/Others/Libs/UMengSDK/thirdparties/thirdparties_ios_1.0.5",
+					"$(PROJECT_DIR)/SiemensPOC/NativeCode/Classes/Others/Libs/UMengSDK/push/push_ios_3.2.3",
+					"$(PROJECT_DIR)/SiemensPOC/NativeCode/Classes/Others/Libs/UMengSDK/common/common_ios_1.5.2/normal",
+				);
+				HEADER_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(SRCROOT)/../node_modules/react-native-image-picker/ios",
+					"$(SRCROOT)/../node_modules/react-native-picker/ios/RCTBEEPickerManager",
+				);
+				INFOPLIST_FILE = SiemensPOC/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+				);
+				OTHER_LDFLAGS = (
+					"$(inherited)",
+					"-ObjC",
+					"-lc++",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.wicresoft.SiemensPOC;
+				PRODUCT_NAME = SiemensPOC;
+				VERSIONING_SYSTEM = "apple-generic";
+			};
+			name = Release;
+		};
+		83CBBA201A601CBA00E9B192 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		83CBBA211A601CBA00E9B192 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = YES;
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		13B07F931A680F5B00A75B9A /* Build configuration list for PBXNativeTarget "SiemensPOC" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				13B07F941A680F5B00A75B9A /* Debug */,
+				13B07F951A680F5B00A75B9A /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		83CBB9FA1A601CBA00E9B192 /* Build configuration list for PBXProject "SiemensPOC" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				83CBBA201A601CBA00E9B192 /* Debug */,
+				83CBBA211A601CBA00E9B192 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 83CBB9F71A601CBA00E9B192 /* Project object */;
+}
